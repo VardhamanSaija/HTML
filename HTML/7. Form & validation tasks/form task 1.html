@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form task 1</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form>
+        <table border="0" cellspacing="10px">
+            <tr>
+                <td colspan="3">Personal Details</td>
+            </tr>
+            <tr>
+                <td>Full Name <br> <input type="text" placeholder="Enter your name" required></td>
+                <td>Date of Birth <br> <input type="date" placeholder="Enter birth date" required></td>
+                <td>Email <br> <input type="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td>Mobile number <br> <input type="number" placeholder="Enter mobile number" required></td>
+                <td>Gender <br> 
+                    <select>
+                    <option>Enter your gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Transgender</option>
+                    </select></td>
+                <td>Occupation <br> <input type="text" placeholder="Enter occupation" value="service" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="3">Identity Details</td>
+            </tr>
+            <tr>
+                <td>ID Type <br> <input type="text" placeholder="Enter ID type" minlength="5" maxlength="15" required></td>
+                <td>ID Number <br> <input type="number" placeholder="Enter ID number" required></td>
+                <td>Issue Authority <br> <input type="text" placeholder="Enter Issue department" value="Gujarat Government" disabled></td>
+            </tr>
+            <tr>
+                <td>Issue Date <br> <input type="date" placeholder="Enter ID issue date" min="2000-12-01" max="2023-12-01" required></td>
+                <td>Issue State <br> <input type="text" placeholder="Enter ID issue state" required></td>
+                <td>Expiry Date <br> <input type="date" placeholder="Enter ID expiry date" required></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button style="background-color: blue; color: white; width: 160px;" >Next &rarr;</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
